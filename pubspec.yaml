@@ -67,6 +67,11 @@ flutter:
     - images/westlife.png
     - images/max.jpeg
     - images/blackbear.jpeg
+    - images/wilddreams.jpeg
+    - images/brokenheart.png
+    - images/lifesucks.png
+    - images/movingon.png
+    - images/sadsongs.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

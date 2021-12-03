@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_ui/utils.dart';
 import 'package:spotify_ui/widgets/greeting.dart';
+import 'package:spotify_ui/widgets/love_song.dart';
+import 'package:spotify_ui/widgets/new_release.dart';
 import 'package:spotify_ui/widgets/recent_songs.dart';
+import 'package:spotify_ui/widgets/recently_played.dart';
 import 'package:spotify_ui/widgets/year_in_review.dart';
 
 void main() => runApp(const HomeScreen());
@@ -47,13 +50,20 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-                // SizedBox(height: 35),
+                SizedBox(height: 30),
                 Greeting(),
                 SizedBox(height: 10),
                 RecentSongs(),
                 SizedBox(height: 18),
                 YearInReview(),
+                SizedBox(height: 15),
+                NewRelease(),
+                SizedBox(height: 20),
+                RecentlyPlayed(),
+                SizedBox(height: 25),
+                LoveSong(),
               ],
             ),
           ),
